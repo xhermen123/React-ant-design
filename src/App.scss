@@ -1,0 +1,150 @@
+@import '~antd/dist/antd.css';
+// @import "../node_modules/@syncfusion/ej2-base/styles/material.css";
+// @import "../node_modules/@syncfusion/ej2-buttons/styles/material.css";
+// @import "../node_modules/@syncfusion/ej2-inputs/styles/material.css";
+// @import "../node_modules/@syncfusion/ej2-react-dropdowns/styles/material.css";
+
+
+.logo {
+  height: 30px;
+  font-size: 30px;
+  line-height: 30px;
+  margin: 16px;
+
+}
+
+.white {
+  color: white !important;
+}
+
+.blue {
+  color: rgb(1, 63, 171) !important;
+}
+
+.header-nav-wrapper {
+  width: fit-content;
+  margin-left: auto;
+  padding-right: 30px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+
+  .anticon {
+    font-size: 30px;
+    color: white;
+    margin-left: 10px;
+  }
+
+  .logout-button {
+    color: #1890ff;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+}
+
+.side-menu {
+  background-color: white;
+  flex: 0 0 240px !important;
+  max-width: 240px !important;
+  min-width: 240px !important;
+  width: 240px !important;
+}
+
+.header {
+  border-bottom: 1px solid #bfd9e6;
+}
+
+.ant-menu-item {
+  color: blue !important;
+  > a {
+    color: blue;
+  }
+  &.ant-menu-item-selected {
+    background-color: blue !important;
+    color: white !important;
+
+    &:after {
+      border-right: none;
+    }
+
+    > a {
+      color: white;
+    }
+  }
+} 
+
+.nav-avatar-wrapper {
+  margin: 20px;
+  display: flex;
+
+  .avatar-img-wrapper {
+    flex: 0 0 50px;
+    margin: 5px 0px;
+  }
+
+  .avatar-desc-wrapper {
+    flex: 1;
+  }
+
+  .avatar-name {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .avatar-company {
+
+  }
+
+}
+
+.nav-membership-wrapper {
+  margin: 10px 20px;
+  
+  .membership-text {
+    font-size: 16px;
+  }
+
+  .membership-type {
+    font-size: 16px;
+    color: blue;
+    text-align: right;
+  }
+}
+
+.ant-btn-primary[disabled] {
+  color: white;
+  opacity: 0.4;
+}
+
+.ant-btn-primary[disabled]:hover {
+  background-color: blue;
+  border-color: #d9d9d9;
+  color: white;
+  opacity: 0.4;
+}
+
+.back-button-wrapper {
+  padding: 0px 20px;
+  padding-top: 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: blue;
+  cursor: pointer;
+
+  span {
+    margin-left: 10px;
+  }
+}
+
+.profile-item-wrapper {
+  display: flex;
+  padding: 10px 0px;
+
+  .profile-item-name {
+    flex: 1;
+  }
+
+  .profile-item-value {
+    font-weight: bold;
+  }
+}

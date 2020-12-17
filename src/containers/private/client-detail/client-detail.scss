@@ -1,0 +1,398 @@
+.client-detail-page {
+    height: 100%;
+
+    .content {
+        padding: 20px;
+        height: 100%;
+        position: relative;
+
+        .ant-layout-header {
+            background: none !important;
+            padding: 0px !important;
+            height: 50px;
+            line-height: 50px;
+
+            .header-content-wrapper {
+                display: flex;
+                align-items: center;
+
+                .header-left-menu-wrapper {
+                    flex: 1;
+
+                    .case-items-wrapper {
+                        display: flex;
+                        align-items: center;
+
+                        .case-status {
+                            font-weight: bold;
+                            line-height: 16px;
+                            white-space: nowrap;
+                            padding-right: 8px;
+                        }
+
+                        .ant-progress-line {
+                            position: relative;
+                            width: 100%;
+                            font-size: 14px;
+                            flex: 0 0 200px;
+
+                            .ant-progress-inner {
+                                background-color: #d4d4d4;
+                            }
+                        }
+
+                        .case-link {
+                            font-size: 14px;
+                            font-weight: bold;
+                            white-space: nowrap;
+                            margin-right: 20px;
+                            color: blue;
+                            opacity: 0.4;
+                            cursor: pointer;
+
+                            &.active {
+                                opacity: 1;
+                            }
+                        }
+
+                        @media (max-width: 992px){
+                            .case-link {
+                                display: none;
+                            }
+                        }
+            
+                        .card-search-input {
+                            display: block;
+                            margin: auto;
+                            width: 250px;
+                            margin-left: 0px;
+                        }
+                    }
+                }
+
+                .header-right-btn-wrapper {
+                    .ant-btn-primary {
+                        background-color: blue;
+                        border-color: blue;
+                        // padding-left: 30px;
+                        // padding-right: 30px;
+                        margin-right: 15px;
+                    }
+                }
+            }
+
+        }
+
+        .client-detail-content {
+            padding-top: 30px;
+
+            .empty-content {
+                position: absolute;
+                text-align: center;
+                font-size: 25px;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            .client-tasks-detail {
+                .ant-collapse-header {
+                    border-left: 10px solid;
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+
+                .extra-items {
+                    span {
+                        color: red;
+                        margin-right: 10px;
+                    }
+
+                    .anticon {
+                        color: blue;
+                    }
+                }
+
+                .todo-tasks {
+                    .ant-collapse-header {
+                        border-color: yellow;
+                    }
+
+                    .client-task-detail-content {
+                        .task-section {
+                            border-color: yellow;
+                        }
+                    }
+                }
+
+                .skip-tasks {
+                    .ant-collapse-header {
+                        border-color: red;
+                    }
+
+                    .client-task-detail-content {
+                        .task-section {
+                            border-color: red;
+                        }
+                    }
+                }
+
+                .review-tasks {
+                    .ant-collapse-header {
+                        border-color: #6699ff;
+                    }
+
+                    .client-task-detail-content {
+                        .task-section {
+                            border-color: #6699ff;
+                        }
+                    }
+                }
+
+                .done-tasks {
+                    .ant-collapse-header {
+                        border-color: #2cc9cc;
+                    }
+
+                    .client-task-detail-content {
+                        .task-section {
+                            border-color: #2cc9cc;
+                        }
+                    }
+                }
+
+                .task-list-title {
+                    text-align: center;
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                    color: #4545b5;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+
+                .ant-collapse-content-box {
+                    padding: 0px;
+                }
+
+                .client-task-detail-content {
+                    .task-section {
+                        padding: 16px;
+                        border-left: 10px solid;
+
+                        .buttons-section {
+                            position: relative;
+                            margin-top: 50px;
+                            float: none;
+
+                            .additional-button {
+                                position: relative;
+                                color: rgb(45, 190, 234);
+                                border: 1px solid rgb(45, 189, 234);
+                                margin-left: 20px;
+                            }
+
+                            .done-button {
+                                border: none; 
+                            }
+                        }
+
+                        .additional-item-row {
+                            margin-top: 30px;
+                            position: relative;
+                            float: none;
+
+                            .uploaded_file_item {
+                                padding: 10px;
+                                .uploaded_file_delete_icon {
+                                    color: blue;
+                                    margin-left: 20px;
+                                }
+                            }
+                        }
+
+                    }
+
+                    .chat-section-wrapper {
+                        background-color: #f0f2f5;
+                        padding: 0px 30px;
+
+                        .chat-section {
+                            background-color: white;
+                            border: 1px solid #d9d9d9;
+                            padding: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.task-manager-dropdown-menu {
+    padding: 10px;
+
+    .ant-dropdown-menu-item {
+        font-size: 16px;
+        color: blue;
+    }
+
+    .delete-menu-item {
+        color: red;
+    }
+}
+
+.new-client-modal {
+    .create-category-name-label {
+        margin: 0;
+        color: rgba(0, 0, 0, 0.85);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    .ant-list-split .ant-list-item {
+        border-bottom: none;
+    } 
+
+    .ant-spin-container {
+        padding-top: 20px;
+
+        .category-item {
+            font-size: 16px;
+            font-weight: 500;
+            color: rgba(0, 0, 0, 0.85);
+            position: relative;
+            padding-right: 30px;
+
+            .category-delete-icon {
+                position: absolute;
+                right: 0px;
+                font-size: 20px;
+                color: blue;
+            }
+        }
+
+    }
+    
+    .category-save-button {
+        padding: 0px 30px;
+        background-color: blue;
+        display: block;
+        margin-left: auto;
+        margin-top: 20px;
+    }
+}
+
+.create-task-drawer {
+    .ant-drawer-body {
+        padding: 0px;
+        background-color: #f0f2f5;
+        min-height: 100vh;
+
+        .create-case-header {
+            background-color: blue;
+            color: white;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+
+            .drawer-close-icon {
+                position: absolute;
+                right: 25px;
+                font-size: 20px;
+                top: 20px;
+            }
+
+            .drawer-header-content {
+                position: relative;
+                max-width: 1100px;
+                text-align: center;
+                font-size: 30px;
+                color: white;
+                margin: auto;
+
+                .save-case-button {
+                    position: absolute;
+                    right: 0px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-color: blue;
+                    color: white;
+                    font-weight: 500;
+                    padding-left: 40px;
+                    padding-right: 40px;
+                }
+            }
+        }
+        
+        .drawer-content-wrapper {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            max-width: 1100px;
+            margin: auto;
+
+            .drawer-item-title {
+                font-size: 25px;
+                color: #242425;
+            }
+
+            .drawer-clickable-link {
+                font-size: 18px;
+                font-weight: 500;
+                text-transform: uppercase;
+                color: blue;
+                text-align: right;
+                margin-left: auto;
+                display: block;
+                line-height: 37px;
+            }
+
+            .ant-form-item-label {
+                label {
+                    font-size: 25px;
+                }
+            }
+
+            .create-new-task-button {
+                background-color: blue;
+                color: white;
+                font-weight: 500;
+                padding-left: 20px;
+                padding-right: 20px;
+                margin-left: auto;
+                display: block;
+            }
+
+            .list-item {
+                background-color: white;
+
+                .checkbox-item {
+                    margin-bottom: 0px;
+                    padding-bottom: 0px;
+                }
+            }
+
+            .load-more-button {
+                text-transform: uppercase;
+                text-align: center;
+                padding: 20px;
+                color: blue;
+                font-weight: 500;
+
+                .anticon {
+                    margin-left: 5px;
+                }
+            }
+        }
+
+        .create-task-btn {
+            display: block;
+            margin-left: auto;
+            padding-left: 30px;
+            padding-right: 30px;
+            background-color: blue;
+        }
+    }
+}

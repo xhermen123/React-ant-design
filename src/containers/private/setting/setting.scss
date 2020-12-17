@@ -1,0 +1,221 @@
+.setting-page {
+    .content {
+        padding: 30px 50px;
+
+        .setting-content {
+            padding: 30px 50px;
+            border-radius: 5px;
+            border: 1px solid lightblue;
+            background-color: white;
+
+            .avatar-close-icon {
+                position: absolute;
+                top: 5px;
+                left: 50%;
+                font-size: 23px;
+                color: blue;
+                -webkit-transform: translateX(40px);
+                transform: translateX(25px);
+            }
+
+            form {
+                max-width: 500px;
+            }
+
+            .drawer-item-title {
+                font-size: 25px;
+                color: #242425;
+            }
+
+            .list-item {
+                position: relative;
+                background-color: white;
+
+                .anticon {
+                    color: lightblue;
+                    margin-right: 10px;
+                    font-size: 20px;
+                }
+
+                span {
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+
+                .more-btn {
+                    position: absolute;
+                    right: 0px;
+                    color: blue;
+                }
+            }
+
+           
+        }
+    }
+
+}
+
+.task-manager-dropdown-menu {
+    padding: 10px;
+
+    .ant-dropdown-menu-item {
+        font-size: 16px;
+        color: blue;
+    }
+
+    .delete-menu-item {
+        color: red;
+    }
+}
+
+.create-category-modal {
+    .create-category-name-label {
+        margin: 0;
+        color: rgba(0, 0, 0, 0.85);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    .ant-list-split .ant-list-item {
+        border-bottom: none;
+    } 
+
+    .ant-spin-container {
+        padding-top: 20px;
+
+        .category-item {
+            font-size: 16px;
+            font-weight: 500;
+            color: rgba(0, 0, 0, 0.85);
+            position: relative;
+            padding-right: 30px;
+
+            .category-delete-icon {
+                position: absolute;
+                right: 0px;
+                font-size: 20px;
+                color: blue;
+            }
+        }
+
+    }
+    
+    .category-save-button {
+        padding: 0px 30px;
+        background-color: blue;
+        display: block;
+        margin-left: auto;
+        margin-top: 20px;
+    }
+}
+
+.create-task-drawer {
+    .ant-drawer-body {
+        padding: 0px;
+        background-color: #f0f2f5;
+        min-height: 100vh;
+
+        .create-case-header {
+            background-color: blue;
+            color: white;
+            position: relative;
+
+            .drawer-close-icon {
+                position: absolute;
+                right: 25px;
+                font-size: 20px;
+                top: 20px;
+            }
+
+            .drawer-header-content {
+                position: relative;
+                max-width: 1100px;
+                text-align: center;
+                font-size: 30px;
+                color: white;
+                margin: auto;
+
+                .save-case-button {
+                    position: absolute;
+                    right: 0px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-color: blue;
+                    color: white;
+                    font-weight: 500;
+                    padding-left: 40px;
+                    padding-right: 40px;
+                }
+            }
+        }
+        
+        .drawer-content-wrapper {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            max-width: 1100px;
+            margin: auto;
+
+            .drawer-item-title {
+                font-size: 25px;
+                color: #242425;
+            }
+
+            .drawer-clickable-link {
+                font-size: 18px;
+                font-weight: 500;
+                text-transform: uppercase;
+                color: blue;
+                text-align: right;
+                margin-left: auto;
+                display: block;
+                line-height: 37px;
+            }
+
+            .ant-form-item-label {
+                label {
+                    font-size: 25px;
+                }
+            }
+
+            .create-new-task-button {
+                background-color: blue;
+                color: white;
+                font-weight: 500;
+                padding-left: 20px;
+                padding-right: 20px;
+                margin-left: auto;
+                display: block;
+            }
+
+            .list-item {
+                background-color: white;
+
+                .checkbox-item {
+                    margin-bottom: 0px;
+                    padding-bottom: 0px;
+                }
+            }
+
+            .load-more-button {
+                text-transform: uppercase;
+                text-align: center;
+                padding: 20px;
+                color: blue;
+                font-weight: 500;
+
+                .anticon {
+                    margin-left: 5px;
+                }
+            }
+        }
+
+        .create-task-btn {
+            display: block;
+            margin-left: auto;
+            padding-left: 30px;
+            padding-right: 30px;
+            background-color: blue;
+        }
+    }
+}

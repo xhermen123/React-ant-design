@@ -1,0 +1,247 @@
+.dashboard-page {
+    .content {
+        padding: 20px;
+
+        .ant-layout-header {
+            background: none !important;
+            padding: 0px !important;
+            height: 50px;
+            line-height: 50px;
+
+            .header-content-wrapper {
+                display: flex;
+
+                .header-left-menu-wrapper {
+                    flex: 1;
+
+                    .case-items-wrapper {
+                        display: flex;
+            
+                        .case-link {
+                            font-size: 14px;
+                            font-weight: bold;
+                            white-space: nowrap;
+                            margin-right: 20px;
+                            color: blue;
+                            opacity: 0.4;
+                            cursor: pointer;
+
+                            &.active {
+                                opacity: 1;
+                            }
+                        }
+
+                        @media (max-width: 992px){
+                            .case-link {
+                                display: none;
+                            }
+                        }
+            
+                        .card-search-input {
+                            display: block;
+                            margin: auto;
+                            width: 250px;
+                            margin-left: 0px;
+                        }
+                    }
+                }
+
+                .header-right-btn-wrapper {
+                    .ant-btn-primary {
+                        background-color: blue;
+                        border-color: blue;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                    }
+                }
+            }
+
+        }
+
+        .cards-wrapper {
+            .work-card-wrapper {
+                padding-top: 20px;
+                padding-bottom: 20px;
+                // margin-bottom: 30px;
+                .work-card {
+                    position: relative;
+                    cursor: pointer;
+                    
+                    .card-more-icon {
+                        font-size: 30px;
+                        position: absolute;
+                        right: 5px;
+                        top: 15px;
+                        color: blue;
+                    }
+                }
+
+                .ant-card {
+                    border-radius: 5px;
+                }
+
+                .ant-card-body {
+                    padding: 20px 15px;
+                }
+
+                .card-avatar {
+                    text-align: center;
+                    position: relative;
+                    margin: 15px 0px;
+
+                    .ant-badge {
+                        position: absolute;
+                        top: 13px;
+                        left: 50%;
+                        transform: translateX(30px);
+                        z-index: 2;
+                    }
+
+                    .user-avatar {
+
+                    }
+                    .user-progress {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        
+                    }
+                }
+
+                .card-text-wrapper {
+                    text-align: center;
+                    .card-name {
+                        margin-bottom: 0px;
+                        color: blue;
+                        font-size: 16px;
+                    }
+
+                    .card-desc {
+
+                    }
+                }
+
+                .card-items-wrapper {
+                    .card-item {
+                        display: flex;
+                        margin-top: 20px;
+                        .card-item-name {
+                            flex: 1
+                        }
+
+                        .card-item-value {
+                            color: blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.create-case-drawer {
+    .ant-drawer-body {
+        padding: 0px;
+        background-color: #f0f2f5;
+        min-height: 100vh;
+
+        .create-case-header {
+            background-color: blue;
+            color: white;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+
+            .drawer-close-icon {
+                position: absolute;
+                right: 25px;
+                font-size: 20px;
+                top: 20px;
+            }
+
+            .drawer-header-content {
+                position: relative;
+                max-width: 1100px;
+                text-align: center;
+                font-size: 30px;
+                color: white;
+                margin: auto;
+
+                .save-case-button {
+                    position: absolute;
+                    right: 0px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-color: blue;
+                    color: white;
+                    font-weight: 500;
+                    padding-left: 40px;
+                    padding-right: 40px;
+                }
+            }
+        }
+        
+        .drawer-content-wrapper {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            max-width: 1100px;
+            margin: auto;
+
+            .drawer-item-title {
+                font-size: 25px;
+                color: #242425;
+            }
+
+            .drawer-clickable-link {
+                font-size: 18px;
+                font-weight: 500;
+                text-transform: uppercase;
+                color: blue;
+                text-align: right;
+                margin-left: auto;
+                display: block;
+                line-height: 37px;
+            }
+
+            .ant-form-item-label {
+                label {
+                    font-size: 25px;
+                }
+            }
+
+            .create-new-task-button {
+                background-color: blue;
+                color: white;
+                font-weight: 500;
+                padding-left: 20px;
+                padding-right: 20px;
+                margin-left: auto;
+                display: block;
+            }
+
+            .list-item {
+                background-color: white;
+
+                .checkbox-item {
+                    margin-bottom: 0px;
+                    padding-bottom: 0px;
+                }
+            }
+
+            .load-more-button {
+                text-transform: uppercase;
+                text-align: center;
+                padding: 20px;
+                color: blue;
+                font-weight: 500;
+
+                .anticon {
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}

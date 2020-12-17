@@ -1,0 +1,63 @@
+.login-page {
+    .ant-card-head-title {
+        display: inline-block;
+        flex: 1 1;
+        padding: 10px 0;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .google-button-wrapper {
+        width: fit-content;
+        margin: auto;
+    }
+
+    .google-login-button {
+        background-color: rgb(255, 255, 255);
+        display: inline-flex;
+        align-items: center;
+        color: rgba(0, 0, 0, 0.54);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 3px 0px;
+        padding: 0px;
+        border-radius: 2px;
+        border: 1px solid transparent;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: Roboto, sans-serif;
+
+        div:first-child {
+            padding: 0px !important;
+            margin-left: 10px;
+        }
+        svg {
+            margin-top: 5px;
+        }
+    }
+
+    .ant-row {
+        margin-bottom: 10px;
+    }
+
+    .button-wrapper {
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 40px;
+
+        .signup-btn {
+            margin-left: auto;
+            display: block;
+        }
+    }
+
+    .bottom-text-wrapper {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .content {
+        padding: 50px;
+    }
+}

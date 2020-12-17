@@ -1,0 +1,114 @@
+.pricing-page {
+    .content {
+
+        h1 {
+            font-size: 40px;
+            // font-weight: bold;
+            color: #3e3d3d;
+            text-align: center;
+            margin-bottom: 0px;
+            margin-top: 30px;
+        }
+
+        h3 {
+            font-size: 17px;
+            font-weight: normal;
+            text-align: center;
+            max-width: 500px;
+            margin: auto; 
+            color: grey;
+        }
+
+        .card-wrapper {
+            max-width: 1000px;
+            margin: auto;
+            margin-top: 60px;
+
+            .ant-card {
+                text-align: center;
+                box-shadow: 0px 0px 10px 1px #a2a2a2;
+
+                .team-text {
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+
+                .price-text-wrapper {
+                    .dollar {
+
+                    }
+
+                    .price-number {
+                        font-size: 40px;
+                        font-weight: bold;
+                    }
+
+                    .period-text {
+
+                    }
+                }
+
+                .card-items-wrapper {
+                    text-align: left;
+                    width: fit-content;
+                    margin: auto;
+                    margin-bottom: 30px;
+                    font-size: 12px;
+
+                    .anticon {
+                        margin-right: 10px;
+                        color: green;
+                    }
+                }
+
+                .ant-btn {
+                    border-color: rgb(1, 63, 171);
+                    color: rgb(1, 63, 171);
+                    text-transform: uppercase;
+
+                    &:hover {
+                        background-color: rgb(1, 63, 171);
+                        color: white;
+                    }
+                }
+
+                // &:hover {
+                //     transform: scaleY(1.1);
+                //     z-index: 2;
+                //     border: 1px solid #0072ff;
+                //     .ant-card-body {
+                //         transform: scaleY(0.9);
+                //     }
+                // }
+
+                &.recommended {
+                    transform: scaleY(1.1);
+                    z-index: 2;
+                    position: relative;
+                    border: 1px solid rgb(1, 63, 171);
+
+                    .recommended-mark {
+                        position: absolute;
+                        top: -5px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        background-color: rgb(1, 63, 171);
+                        color: white;
+                        padding: 0 5px;
+                        border-radius: 2px;
+                    }
+
+                    .ant-card-body {
+                        transform: scaleY(0.9);
+                    }
+
+                    .ant-btn {
+                        background-color: rgb(1, 63, 171);
+                        color: white;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
